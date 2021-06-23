@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Edumap">
         <activity
-            android:name=".DashboardActivity"
+            android:name=".activities.DashboardActivity"
             android:exported="true" />
         <activity
-            android:name=".SigninActivity"
+            android:name=".activities.SigninActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -11,4 +11,6 @@
     <color name="light_grey">#CCCCCC</color>
     <color name="dark_grey">#777777</color>
     <color name="InactiveBottomNavIconColor">#91BFFF</color>
+    <color name="grey_hello_name">#939393</color>
+    <color name="light_blue_ygot">#C4E1FF</color>
 </resources>

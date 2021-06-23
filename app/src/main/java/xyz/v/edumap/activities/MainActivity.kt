@@ -1,18 +1,15 @@
-package xyz.v.edumap
+package xyz.v.edumap.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import xyz.v.edumap.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,11 +30,17 @@ class MainActivity : AppCompatActivity() {
 
     fun updateUI(user:FirebaseUser?){
         if(user!=null){
-            startActivity(Intent(this,DashboardActivity::class.java))
-            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
+            Handler(Looper.getMainLooper()).postDelayed({
+                startActivity(Intent(this, DashboardActivity::class.java))
+                overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
+                finish()
+            },2000)
         }else{
-            startActivity(Intent(this,SigninActivity::class.java))
-            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
+            Handler(Looper.getMainLooper()).postDelayed({
+                startActivity(Intent(this,SigninActivity::class.java))
+                overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
+                finish()
+            },2000)
         }
     }
 
