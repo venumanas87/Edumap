@@ -13,7 +13,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class SubjecstAdapter(val subjectList:ArrayList<String>):RecyclerView.Adapter<SubjecstAdapter.mvh>() {
-    val colorList = arrayOf("#F45656","#E8D15B","#35DABC","#BB86FC","#FF4081","#FFAB40")
+    val colorList = arrayOf("#F45656","#E8D15B","#35DABC","#BB86FC","#FF4081","#FFAB40","#F45656","#E8D15B","#35DABC","#BB86FC","#FF4081","#FFAB40")
 
     inner class mvh(view:View) : RecyclerView.ViewHolder(view){
         var subTV  =view.findViewById<TextView>(R.id.subject)
