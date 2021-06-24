@@ -3,18 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/drawable/bottom_nav_bg.xml" value="0.124" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/drawable/bottom_nav_state.xml" value="0.1" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/drawable/et_bg.xml" value="0.1515" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/drawable/shadow.xml" value="0.124" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/drawable/signin_gradient_bg.xml" value="0.1125" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_signin.xml" value="0.1" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_profile.xml" value="0.22447916666666667" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/subject_card.xml" value="0.22447916666666667" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/drawable/signin_gradient_bg.xml" value="0.2645" />
+        <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/activity_dashboard.xml" value="0.259375" />
+        <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/activity_signin.xml" value="0.264" />
+        <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/fragment_profile.xml" value="0.259375" />
+        <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/subject_card.xml" value="0.259375" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_dashboard.xml" value="0.21041666666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_signin.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
@@ -23,5 +18,8 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
   </component>
 </project>
