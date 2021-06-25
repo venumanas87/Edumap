@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="10dp"
+    android:backgroundTint="@color/primaryBlue"
+    app:cardCornerRadius="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Why Lysosomes are called suicide bags?"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/title_tv"
+            android:fontFamily="@font/poppins_medium"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="5dp"
+                android:id="@+id/subject_tv"
+                android:text="Biology"
+                android:textColor="@color/primaryBlue"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_thumb_up_24"
+                app:tint="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:id="@+id/likes_tv"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"/>
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_comment_24"
+                android:layout_marginStart="15dp"
+                app:tint="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:id="@+id/comments_tv"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"/>
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_baseline_remove_red_eye_24"
+                app:tint="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:id="@+id/seen_tv"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

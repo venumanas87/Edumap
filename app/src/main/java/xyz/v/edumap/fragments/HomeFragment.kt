@@ -16,7 +16,6 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
     private var param1: StudentClass? = null
     private var _binding:FragmentHomeBinding? = null
 

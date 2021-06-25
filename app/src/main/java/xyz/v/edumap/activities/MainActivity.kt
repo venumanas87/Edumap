@@ -1,10 +1,13 @@
 package xyz.v.edumap.activities
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.View
+import android.view.WindowManager
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
@@ -26,10 +29,13 @@ class MainActivity : AppCompatActivity() {
         auth = Firebase.auth
         fvm = ViewModelProvider(this).get(FirestoreViewmodel::class.java)
         updateUI(auth.currentUser)
-      /*  Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this,SigninActivity::class.java))
-            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
-        },2000)*/
+        window.apply {
+            clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            //addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            statusBarColor = Color.TRANSPARENT
+        }
+
     }
 
 
