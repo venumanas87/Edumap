@@ -13,4 +13,5 @@
     <color name="InactiveBottomNavIconColor">#91BFFF</color>
     <color name="grey_hello_name">#939393</color>
     <color name="light_blue_ygot">#C4E1FF</color>
+    <color name="blueDark">#255FDB</color>
 </resources>

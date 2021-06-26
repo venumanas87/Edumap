@@ -45,13 +45,13 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, DashboardActivity::class.java).apply {
                     putExtra("studClass",it)
                 })
-                overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
+                overridePendingTransition(R.anim.slide_in_from_right,R.anim.slide_out_to_left)
                 finish()
             })
         }else{
             Handler(Looper.getMainLooper()).postDelayed({
                 startActivity(Intent(this,SigninActivity::class.java))
-                overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
+                overridePendingTransition(R.anim.slide_in_from_right,R.anim.slide_out_to_left)
                 finish()
             },2000)
         }

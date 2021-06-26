@@ -8,9 +8,12 @@
         <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/activity_signin.xml" value="0.264" />
         <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/fragment_profile.xml" value="0.259375" />
         <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/subject_card.xml" value="0.259375" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_answer.xml" value="0.25" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_dashboard.xml" value="0.21041666666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_doubt.xml" value="0.22447916666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_main.xml" value="0.19907407407407407" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_signin.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/answer_card.xml" value="0.22447916666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_community.xml" value="0.22447916666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_home.xml" value="0.19907407407407407" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_profile.xml" value="0.19907407407407407" />
@@ -23,6 +26,13 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="Edumap.app" />
+      </set>
+    </option>
   </component>
   <component name="SuppressKotlinCodeStyleNotification">
     <option name="disableForAll" value="true" />

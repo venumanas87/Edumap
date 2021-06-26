@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Edumap">
         <activity
+            android:name=".activities.DoubtActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AnswerActivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.DashboardActivity"
             android:exported="true" />
         <activity

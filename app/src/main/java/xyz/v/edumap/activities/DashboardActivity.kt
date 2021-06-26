@@ -32,10 +32,6 @@ class DashboardActivity : AppCompatActivity() {
         fvm = ViewModelProvider(this).get(FirestoreViewmodel::class.java)
 
         configureSystemUI()
-
-        fvm.getCommunity()
-        fvm.getCommunityLive()
-
         getExtrasNow()
 
 
@@ -47,7 +43,6 @@ class DashboardActivity : AppCompatActivity() {
 
     private fun setUpNavigation() {
         binding.btmNavBar.setOnNavigationItemSelectedListener {
-            println("venu ${it.itemId}")
             when(it.itemId){
                 R.id.home->{
                     transactFragment(HomeFragment.newInstance(stdCls!!,""))
@@ -55,7 +50,6 @@ class DashboardActivity : AppCompatActivity() {
                 }
                 R.id.report->{
                     transactFragment(ReportFragment())
-                    println("venu reportclick")
 
                 }
                 R.id.community->{
