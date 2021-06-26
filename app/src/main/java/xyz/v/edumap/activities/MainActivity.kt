@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     fun updateUI(user:FirebaseUser?){
         if(user!=null){
-            fvm.getStudentClass().observe(this, Observer {
+            fvm.getStudentClass().observe(this, {
                 startActivity(Intent(this, DashboardActivity::class.java).apply {
                     putExtra("studClass",it)
                 })
