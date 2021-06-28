@@ -8,19 +8,30 @@
         <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/activity_signin.xml" value="0.264" />
         <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/fragment_profile.xml" value="0.259375" />
         <entry key="..\:/Users/sagil faraz/AndroidStudioProjects/Edumap/app/src/main/res/layout/subject_card.xml" value="0.259375" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/drawable/et_bg.xml" value="0.148" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/drawable/reply_et_bg.xml" value="0.148" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_add_student.xml" value="0.22447916666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_answer.xml" value="0.25" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_dashboard.xml" value="0.21041666666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_doubt.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_lecture.xml" value="0.20885416666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_main.xml" value="0.19907407407407407" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_signin.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/activity_teachers.xml" value="0.22447916666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/answer_card.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/community_teachers_fragment.xml" value="0.22447916666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_community.xml" value="0.22447916666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_home.xml" value="0.19907407407407407" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_profile.xml" value="0.19907407407407407" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_raking.xml" value="0.22447916666666667" />
-        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_report.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_report.xml" value="0.2" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_teacher_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/fragment_teacher_report.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/lectures_crad.xml" value="0.20885416666666667" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/post_card.xml" value="0.25" />
         <entry key="..\:/Venu/projects/Edumap/app/src/main/res/layout/ranking_card.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2175925925925926" />
+        <entry key="..\:/Venu/projects/Edumap/app/src/main/res/menu/teachers_bottom_nav.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>

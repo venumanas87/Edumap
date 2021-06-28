@@ -7,18 +7,11 @@
     <item android:id="@+id/report"
         android:title="Report"
         android:icon="@drawable/report_ico"/>
-
     <item android:id="@+id/community"
         android:title="Community"
         android:icon="@drawable/community_ico"/>
-    <item android:id="@+id/ranking"
-        android:title="Ranking"
-        android:icon="@drawable/ranking_ico"/>
-
     <item android:id="@+id/profile"
         android:title="Profile"
         android:icon="@drawable/profile_ico"/>
-
-
 
 </menu>

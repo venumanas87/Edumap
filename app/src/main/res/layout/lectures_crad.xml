@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:backgroundTint="@color/light_grey"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="15dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/thumbnail"
+                android:id="@+id/thumbnail"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heading"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:id="@+id/title"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:textSize="10sp"
+                        android:id="@+id/chapter_tv"/>
+
+                    <ImageView
+                        android:id="@+id/dnload_iv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_baseline_arrow_circle_down_24"
+                        app:tint="@color/blueDark" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

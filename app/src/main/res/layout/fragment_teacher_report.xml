@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ReportFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="15dp"
+        android:outlineSpotShadowColor="@color/primaryBlue"
+        android:outlineAmbientShadowColor="@color/black">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Lectures Completed"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="56"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Lectures Remaining"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="21"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="15dp"
+        android:outlineSpotShadowColor="@color/primaryBlue"
+        android:outlineAmbientShadowColor="@color/black">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Attendance Record"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_bg"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/light_blue_ygot">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="IX B"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_bg"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/light_blue_ygot">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="IX D"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_bg"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/light_blue_ygot">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="X A"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_bg"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/light_blue_ygot">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="X F"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+</LinearLayout>

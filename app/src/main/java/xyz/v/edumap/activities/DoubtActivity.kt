@@ -24,7 +24,10 @@ class DoubtActivity : AppCompatActivity() {
 
         binding.submitButton.setOnClickListener {
             val title = binding.questionEt.text.toString()
-            val name = user.currentUser?.displayName.toString()
+            var name = "Neeraj Rajput"
+            if (user.currentUser != null){
+                name = user.currentUser!!.displayName.toString()
+            }
             val subj = binding.subjectEt.text.toString()
             val post = PostModel(title,subj,name)
             fvm.newPost(post)

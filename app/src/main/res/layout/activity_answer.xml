@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".activities.AnswerActivity">
 
     <LinearLayout
@@ -159,6 +160,39 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/rvAnswer"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/answer_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reply_et_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="@string/type_something_here"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/primaryBlue"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/send_btn"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_baseline_send_24"
+                app:tint="@color/blueDark" />
+        </RelativeLayout>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -34,12 +35,9 @@ class SigninActivity : AppCompatActivity() {
         auth = Firebase.auth
         setContentView(binding.root)
         setListeners()
-        window.apply {
-//            clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-//            addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-//            decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN  + View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
-//            statusBarColor = Color.TRANSPARENT
-
+        fvm.getStudents()
+        binding.signInButton.setOnClickListener {
+            startActivity(Intent(this,TeachersActivity::class.java))
         }
     }
 
@@ -91,14 +89,29 @@ class SigninActivity : AppCompatActivity() {
      }
 
      fun updateUI(user: FirebaseUser?){
+
+
          if(user!=null){
-             fvm.getStudentClass().observe(this, {
-                 startActivity(Intent(this, DashboardActivity::class.java).apply {
-                     putExtra("studClass",it)
+             var userIsVerified = false
+             fvm.getStudents().observeForever {
+                 for (doc in it){
+                     if (doc.email!! == user.email){
+                         userIsVerified = true
+                     }
+                 }
+             }
+             if (userIsVerified){
+                 fvm.getStudentClass().observe(this, {
+                     startActivity(Intent(this, DashboardActivity::class.java).apply {
+                         putExtra("studClass",it)
+                     })
+                     overridePendingTransition(R.anim.slide_in_from_right,R.anim.slide_out_to_left)
+                     finish()
                  })
-                 overridePendingTransition(R.anim.slide_in_from_right,R.anim.slide_out_to_left)
-                 finish()
-             })
+             }else{
+                 Toast.makeText(this,"Not verified",Toast.LENGTH_SHORT).show()
+                 auth.signOut()
+             }
          }else{
              startActivity(Intent(this, SigninActivity::class.java))
              overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)

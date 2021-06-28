@@ -1,5 +1,6 @@
 package xyz.v.edumap.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import xyz.v.edumap.activities.SigninActivity
 import xyz.v.edumap.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
@@ -14,10 +16,6 @@ class ProfileFragment : Fragment() {
 
     private val binding get() = _binding!!
     private val auth = Firebase.auth
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,6 +27,11 @@ class ProfileFragment : Fragment() {
         binding.EditEmail.text = auth.currentUser?.email
 
 
+        binding.signoutTv.setOnClickListener {
+            auth.signOut()
+            startActivity(Intent(context,SigninActivity::class.java))
+        }
+
         return binding.root
     }
 
@@ -37,6 +40,4 @@ class ProfileFragment : Fragment() {
         _binding = null
     }
 
-    companion object {
-    }
 }

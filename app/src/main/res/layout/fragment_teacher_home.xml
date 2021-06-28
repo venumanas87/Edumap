@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Hello Neeraj"
+                android:textColor="@color/grey_hello_name"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/bell_ico"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Here is your"
+            android:textSize="26dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/light_blue_ygot"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Schedule for Today"
+            android:id="@+id/classes_tv"
+            android:textSize="26dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/primaryBlue"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Classes"
+            android:textSize="20dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/primaryBlue"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Your current classes"
+            android:textSize="14dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/grey_hello_name"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/subject_card"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:id="@+id/recyclerViewSubjects"
+            android:layout_marginBottom="30dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Your Schedule"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/primaryBlue"
+                />
+
+            <ImageView
+                android:id="@+id/add_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/add_btn" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Upcoming classes"
+            android:textSize="14dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/grey_hello_name"
+            android:layout_marginTop="10dp"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/blueDark"
+            android:layout_marginTop="15dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="IX D"
+                        android:textSize="24dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Chapter 2"
+                        android:textSize="14dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="2:00 pm"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/primaryBlue"
+            android:layout_marginTop="15dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="X F"
+                        android:textSize="24dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Chapter 1"
+                        android:textSize="14dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="03:00 pm"
+                    android:textSize="18dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/primaryBlue"
+            android:layout_marginTop="15dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="IX B"
+                        android:textSize="24dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Chapter 3"
+                        android:textSize="14dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="04:00 pm"
+                    android:textSize="18dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

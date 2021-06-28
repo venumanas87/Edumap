@@ -8,10 +8,9 @@
 
     <RelativeLayout
         android:id="@+id/top_rl"
-        android:background="@drawable/ranking_bg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="400dp"
+        android:background="@drawable/ranking_bg">
 
     </RelativeLayout>
     <androidx.cardview.widget.CardView

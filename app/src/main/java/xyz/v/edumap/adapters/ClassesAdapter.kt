@@ -16,7 +16,7 @@ import xyz.v.edumap.activities.LectureActivity
 import java.util.*
 import kotlin.collections.ArrayList
 
-class SubjecstAdapter(val subjectList:ArrayList<String>):RecyclerView.Adapter<SubjecstAdapter.mvh>() {
+class ClassesAdapter(val subjectList:ArrayList<String>):RecyclerView.Adapter<ClassesAdapter.mvh>() {
     val colorList = arrayOf("#F45656","#E8D15B","#35DABC","#BB86FC","#FF4081","#FFAB40","#F45656","#E8D15B","#35DABC","#BB86FC","#FF4081","#FFAB40")
 
     inner class mvh(view:View) : RecyclerView.ViewHolder(view){
@@ -37,8 +37,8 @@ class SubjecstAdapter(val subjectList:ArrayList<String>):RecyclerView.Adapter<Su
         val act = holder.subTV.context as Activity
 
         holder.mc.setOnClickListener {
-            it.context.startActivity(Intent(it.context, LectureActivity::class.java))
-            act.overridePendingTransition(R.anim.slide_in_from_right,R.anim.slide_out_to_left)
+          //  it.context.startActivity(Intent(it.context, LectureActivity::class.java))
+           // act.overridePendingTransition(R.anim.slide_in_from_right,R.anim.slide_out_to_left)
         }
     }
 
